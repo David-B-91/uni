@@ -1,0 +1,45 @@
+class TreasureChest {
+    description="";
+  
+    String getExtraDescription() {
+        return "The old treasure chest is " + getDescription()+".";
+    }
+  
+    static void report(String message) {
+      System.out.println(message);
+    }
+  
+    static void scenarioHeader(String message) {
+      report("\n"+message);
+      report("------------------------------".substring(1,message.length()));
+     }
+  
+  ChestState {
+  
+    Closed {
+      entry / {setDescription("closed"); report ("You closed the lid of the chest.");}
+      open -> Opened;
+    }
+  
+     Opened {
+      entry / {setDescription("open"); report("You hear a creaking sound.");}
+      close / {report("Thud! The chest clsoes with a loud noise.");} -> Closed;
+    }
+  
+   }
+  
+    public static void main (String[] args) {
+    TreasureChest chest = new TreasureChest();
+
+    report(chest.getExtraDescription());
+
+    chest.open();
+    report(chest.getExtraDescription());
+
+    chest.close();
+    report(chest.getExtraDescription());
+}
+  
+}
+
+//$?[End_of_model]$?

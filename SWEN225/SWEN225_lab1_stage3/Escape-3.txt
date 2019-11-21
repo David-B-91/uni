@@ -1,0 +1,111 @@
+class Room
+{
+  * -> * GameFixture fixtures;
+  
+  public String getRoomDescription(){
+    StringBuilder roomDescription = new StringBuilder("I'm in a room. I see:\n");
+    for (GameFixture fixture : fixtures) {
+      roomDescription.append(fixture.getFullFixtureDescription());
+      roomDescription.append('\n');
+    }
+    return roomDescription.toString();
+  }
+  
+  
+  public void playScenario(){
+    TreasureChest chest = new TreasureChest("A large and heavy treasure chest.");
+    this.addFixture(chest);
+    Wardrobe wardrobe = new Wardrobe("An old an Mysterious looking wardrobe.");
+    this.addFixture(wardrobe);
+    System.out.println(getRoomDescription());
+    chest.setOpen(true);
+    wardrobe.setLocked(false);
+    System.out.println(getRoomDescription());
+  }
+  
+  public static void main(String... args) {
+    new Room().playScenario();
+  }
+  
+  
+}
+
+class GameFixture
+{
+  fixtureDescription;
+  
+  public String getFullFixtureDescription() {
+    StringBuilder fixDes = new StringBuilder();
+    fixDes.append(getFixtureDescription());
+    fixDes.append(getExtraFixtureDescription());
+    return fixDes.toString();
+  }
+  
+  public String getExtraFixtureDescription() {
+    return "";
+  }
+  
+}
+
+class TreasureChest
+{   
+  Boolean open = false;
+  isA GameFixture;
+  
+  public String getExtraFixtureDescription() {
+    if (getOpen()) return " It contains the room key!";
+    else return " It's lid is closed";
+  }
+  
+}
+
+class Wardrobe
+{
+  Boolean locked = true;
+  isA GameFixture;
+  
+  public String getExtraFixtureDescription() {
+    return " The wardrobe door is " + doorDescription();
+  }
+  
+  private String doorDescription() {
+     if (!locked) return "unlocked.";
+     else return "locked.";
+  }
+  
+}
+
+//$?[End_of_model]$?
+
+class Room
+{
+  position 67 40 238 79;
+  position.association Room__Room:roleName 51,41 109,19;
+  position.association GameFixture:fixtures__Room 238,16 0,10;
+}
+
+class GameFixture
+{
+  position 315 210 194 59;
+    position.association GameFixture__Room 0,21 109,20;
+}
+
+class TreasureChest
+{
+  position 120 392 109 57;
+}
+
+class Room
+{
+  position 67 40 238 79;
+}
+
+class Room
+{
+  position 67 40 238 79;
+}
+
+class Wardrobe
+{
+  position 364 420 109 41;
+}

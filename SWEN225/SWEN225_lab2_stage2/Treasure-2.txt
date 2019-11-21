@@ -1,0 +1,73 @@
+class TreasureChest {
+    description="";
+  
+  Boolean playerHasKey() {
+    return true;
+  }
+  
+    String getExtraDescription() {
+        return "The old treasure chest is " + getDescription()+".";
+    }
+  
+    static void report(String message) {
+      System.out.println(message);
+    }
+  
+    static void scenarioHeader(String message) {
+      report("\n"+message);
+      report("------------------------------".substring(1,message.length()));
+     }
+  
+  ChestState {
+    
+    Locked {
+        entry/ {setDescription("locked");}
+       [playerHasKey()] unlock -> Unlocked; 
+    }
+    
+    Unlocked{
+           
+      
+          Closed {
+            entry / {setDescription("closed");}
+            lock / {report ("You lock the chest with your key.");} ->Locked;
+            open -> Opened;
+          }
+        
+           Opened {
+            entry / {setDescription("open"); report("You hear a creaking sound.");}
+            close / {report("Thud! The chest closes with a loud noise.\nYou closed the lid of the chest.");} -> Closed;
+            lock / {report("Thud! The chest closes with a loud noise.\nYou lock the chest with your key.");} -> Locked;
+          }
+    
+    }
+  
+   }
+  
+    public static void main (String[] args) {
+    TreasureChest chest = new TreasureChest();
+
+    report(chest.getExtraDescription());
+
+    scenarioHeader("Unlock then open:");
+    chest.unlock();
+    report(chest.getExtraDescription());
+      
+    chest.open();
+    report(chest.getExtraDescription());
+      
+    scenarioHeader("Lock from opened state:");
+    chest.lock();
+    report(chest.getExtraDescription());
+      
+    scenarioHeader("Lock from closed state:");
+    chest.unlock();
+    chest.open();
+    chest.close();
+    chest.lock();
+    report(chest.getExtraDescription());
+}
+  
+}
+
+//$?[End_of_model]$?
