@@ -1,0 +1,105 @@
+COMP261 - Assignment 5 - String Search and Compression - David Burrell.
+
+Question 1: 
+	I presume the first two characters are /n and /t or 	something, and the question mark at the bottom is a 	special character that eclipse doesn't have a symbol for.
+Char: 
+: 111010
+Char: 
+: 111001
+Char:  : 110
+Char: !: 1110000111
+Char: ": 11111010
+Char: ': 111000010
+Char: (: 1111101111111
+Char: ): 011000111000
+Char: *: 11111011010010
+Char: ,: 1111111
+Char: -: 100101001
+Char: .: 1110001
+Char: /: 011000111001010111110
+Char: 0: 111110110100001
+Char: 1: 11111011010001
+Char: 2: 111110110100000
+Char: 3: 0110001110010111
+Char: 4: 01100011100101010
+Char: 5: 0110001110010100
+Char: 6: 0110001110010110
+Char: 7: 01100011100111110
+Char: 8: 01100011100100
+Char: 9: 01100011100111101
+Char: :: 111000001001
+Char: ;: 111110110101
+Char: =: 011000111001010111111
+Char: ?: 1001010100
+Char: A: 011000110
+Char: B: 1110000001
+Char: C: 01100010000
+Char: D: 11111011000
+Char: E: 01100010001
+Char: F: 11100000101
+Char: G: 111110111101
+Char: H: 1110000011
+Char: I: 100101011
+Char: J: 11111011010011
+Char: K: 111110111100
+Char: L: 1111101111110
+Char: M: 1001010101
+Char: N: 1110000000
+Char: O: 01100011101
+Char: P: 011000101
+Char: Q: 01100011100111111
+Char: R: 11111011011
+Char: S: 0110001111
+Char: T: 100101000
+Char: U: 01100011100110
+Char: V: 111000001000
+Char: W: 0110001001
+Char: X: 01100011100111100
+Char: Y: 111110111110
+Char: Z: 011000111001110
+Char: à: 0110001110010101110
+Char: a: 1000
+Char: b: 1111100
+Char: c: 101111
+Char: ä: 0110001110010101111010
+Char: d: 10110
+Char: e: 000
+Char: f: 100110
+Char: g: 100100
+Char: h: 0011
+Char: i: 0100
+Char: é: 0110001110010101111011
+Char: ê: 011000111001010110
+Char: j: 11111011001
+Char: k: 0110000
+Char: l: 01101
+Char: m: 101110
+Char: n: 0101
+Char: o: 0111
+Char: p: 1111110
+Char: q: 11111011101
+Char: r: 11110
+Char: s: 0010
+Char: t: 1010
+Char: u: 111011
+Char: v: 1001011
+Char: w: 100111
+Char: x: 1110000110
+Char: y: 011001
+Char: z: 11111011100
+Char: ?: 011000111001010111100
+
+	Final Size of War and Peace after Huffman Coding: 1848598 bytes
+
+Question 2:
+	W&P: input 3258246 bytes, output 1848598 bytes, decrease by 1409648 	bytes. 
+	Taisho: input 3649944 bytes, output 1542656 bytes, decrease by 2107288 bytes.
+	pi: input:1010003 bytes, output 443632 bytes, decrease by 566371 bytes.
+
+	taisho has best reduction, I guess because of the number of characters in the text, or the origianl size of each character being bigger or something.
+
+Question 3:
+	the larger the sliding window, the more text to look for patterns in, thus the higher chance of finding a matching pattern, it should increase the quality of compression.
+
+Question 4:
+	I didn't manage to get LZ77 working correctly, so I can only guess, but I'd say no, as huffman creates more characters per character, 3 for e above, up to 17 for some, sure there is a lot of chance to see more patterns but I think the fact that the character count is increased overall affects it more.
