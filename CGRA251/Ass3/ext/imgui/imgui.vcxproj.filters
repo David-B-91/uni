@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\ext\imgui\imgui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\ext\imgui\imgui_demo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\ext\imgui\imgui_draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\ext\imgui\imconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\ext\imgui\imgui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\ext\imgui\imgui_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\ext\imgui\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D7444739-7973-3352-8F0E-74D2DDD974D8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A6EB7071-3589-3EE3-984D-CB92061E4B43}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

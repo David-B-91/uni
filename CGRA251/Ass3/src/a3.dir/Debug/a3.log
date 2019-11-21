@@ -1,0 +1,21 @@
+﻿  boid.cpp
+E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\scene.hpp(53,26): warning C4305:  'initializing': truncation from 'double' to 'float'
+E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\scene.hpp(54,26): warning C4305:  'initializing': truncation from 'double' to 'float'
+E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\scene.hpp(55,24): warning C4305:  'initializing': truncation from 'double' to 'float'
+E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\scene.hpp(98,25): warning C4305:  'initializing': truncation from 'double' to 'float'
+E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\boid.cpp(187,57): warning C4244:  '=': conversion from 'double' to 'T', possible loss of data
+E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\boid.cpp(187,57): warning C4244:         with
+E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\boid.cpp(187,57): warning C4244:         [
+E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\boid.cpp(187,57): warning C4244:             T=float
+E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\boid.cpp(187,57): warning C4244:         ]
+E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\boid.cpp(203,57): warning C4244:  '=': conversion from 'double' to 'T', possible loss of data
+E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\boid.cpp(203,57): warning C4244:         with
+E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\boid.cpp(203,57): warning C4244:         [
+E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\boid.cpp(203,57): warning C4244:             T=float
+E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\boid.cpp(203,57): warning C4244:         ]
+E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\boid.cpp(219,57): warning C4244:  '=': conversion from 'double' to 'T', possible loss of data
+E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\boid.cpp(219,57): warning C4244:         with
+E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\boid.cpp(219,57): warning C4244:         [
+E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\boid.cpp(219,57): warning C4244:             T=float
+E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\boid.cpp(219,57): warning C4244:         ]
+  a3.vcxproj -> E:\My Documents\Compsci Yr5\CGRA251\Ass3\bin\Debug\a3.exe

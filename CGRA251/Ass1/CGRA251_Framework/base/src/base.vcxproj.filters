@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\src\application.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\src\cgra\cgra_gui.cpp">
+      <Filter>src\cgra</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\src\cgra\cgra_shader.cpp">
+      <Filter>src\cgra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\work\src\objfile.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\src\application.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\src\opengl.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\src\triangle.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\src\cgra\cgra_gui.hpp">
+      <Filter>src\cgra</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\src\cgra\cgra_shader.hpp">
+      <Filter>src\cgra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\work\src\objfile.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\src\CMakeLists.txt">
+      <Filter>src</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\src\cgra\CMakeLists.txt">
+      <Filter>src\cgra</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{7161705D-B95D-35E1-BCC2-09B993A0DFFA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\cgra">
+      <UniqueIdentifier>{E03A4816-4E7C-3853-9E10-CC9CFE430113}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

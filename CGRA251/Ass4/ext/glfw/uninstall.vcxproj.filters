@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\CMakeFiles\e2f176888eb06d0d5267251005bc1524\uninstall.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\ext\glfw\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\ext\glfw\CMakeFiles\uninstall" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F4FA3EE5-ED4E-3300-A1C2-1EAD21704A2F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

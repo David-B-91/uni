@@ -1,0 +1,10 @@
+^E:\MY DOCUMENTS\COMPSCI YR5\CGRA251\ASS3\WORK\EXT\STB\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" "-SE:/My Documents/Compsci Yr5/CGRA251/Ass3/work" "-BE:/My Documents/Compsci Yr5/CGRA251/Ass3" --check-stamp-file "E:/My Documents/Compsci Yr5/CGRA251/Ass3/ext/stb/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

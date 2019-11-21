@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\CMakeFiles\cd021dc55d9aaf8752c6b218134a921a\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{EA379CB1-3CA2-3CEE-AA11-9CE7179FFB24}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

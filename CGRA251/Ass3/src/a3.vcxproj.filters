@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\application.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\boid.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\scene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\cgra\cgra_geometry.cpp">
+      <Filter>src\cgra</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\cgra\cgra_gui.cpp">
+      <Filter>src\cgra</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\cgra\cgra_mesh.cpp">
+      <Filter>src\cgra</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\cgra\cgra_shader.cpp">
+      <Filter>src\cgra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\work\src\predator.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\application.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\boid.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\scene.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\opengl.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\cgra\cgra_geometry.hpp">
+      <Filter>src\cgra</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\cgra\cgra_gui.hpp">
+      <Filter>src\cgra</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\cgra\cgra_image.hpp">
+      <Filter>src\cgra</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\cgra\cgra_mesh.hpp">
+      <Filter>src\cgra</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\cgra\cgra_shader.hpp">
+      <Filter>src\cgra</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\cgra\cgra_wavefront.hpp">
+      <Filter>src\cgra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\work\src\predator.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\CMakeLists.txt">
+      <Filter>src</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\My Documents\Compsci Yr5\CGRA251\Ass3\work\src\cgra\CMakeLists.txt">
+      <Filter>src\cgra</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{5814353F-DF35-3DE1-AD3D-5DD6F8F0B634}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\cgra">
+      <UniqueIdentifier>{01E6B45B-678B-3035-9D10-92C417494E65}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

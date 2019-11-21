@@ -1,0 +1,20 @@
+﻿  objfile.cpp
+E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\ext\glm\detail\type_vec4.hpp(45,1): warning C4201:  nonstandard extension used: nameless struct/union
+E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\ext\glm\detail\type_vec4.hpp(271): message :  see reference to class template instantiation 'glm::vec<4,T,P>' being compiled
+E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\ext\glm\detail\type_vec4.hpp(46,1): warning C4201:  nonstandard extension used: nameless struct/union
+E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\ext\glm\detail\type_vec4.hpp(47,1): warning C4201:  nonstandard extension used: nameless struct/union
+E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\ext\glm\detail/type_vec2.hpp(45,1): warning C4201:  nonstandard extension used: nameless struct/union
+E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\ext\glm\detail/type_vec2.hpp(205): message :  see reference to class template instantiation 'glm::vec<2,T,P>' being compiled
+E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\ext\glm\detail/type_vec2.hpp(46,1): warning C4201:  nonstandard extension used: nameless struct/union
+E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\ext\glm\detail/type_vec2.hpp(47,1): warning C4201:  nonstandard extension used: nameless struct/union
+E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\ext\glm\detail/type_vec3.hpp(45,1): warning C4201:  nonstandard extension used: nameless struct/union
+E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\ext\glm\detail/type_vec3.hpp(226): message :  see reference to class template instantiation 'glm::vec<3,T,P>' being compiled
+E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\ext\glm\detail/type_vec3.hpp(46,1): warning C4201:  nonstandard extension used: nameless struct/union
+E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\ext\glm\detail/type_vec3.hpp(47,1): warning C4201:  nonstandard extension used: nameless struct/union
+E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\ext\glm\gtc\../gtc/quaternion.hpp(55,1): warning C4201:  nonstandard extension used: nameless struct/union
+E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\ext\glm\gtc\../gtc/quaternion.hpp(130): message :  see reference to class template instantiation 'glm::tquat<T,P>' being compiled
+E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\src\triangle.hpp(99,1): warning C4267:  'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\src\objfile.h(41,44): warning C4305:  'initializing': truncation from 'double' to 'float'
+..\work\src\objfile.cpp(314,47): warning C4267:  'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+..\work\src\objfile.cpp(314,47): warning C4267: E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\work\src\objfile.cpp(334) : warning C4715: 'Objfile::limit': not all control paths return a value
+  base.vcxproj -> E:\My Documents\Compsci Yr5\CGRA251\Ass1\CGRA251_Framework\base\bin\Debug\base.exe

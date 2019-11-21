@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass2\base\work\src\application.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass2\base\work\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass2\base\work\src\cgra\cgra_geometry.cpp">
+      <Filter>src\cgra</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass2\base\work\src\cgra\cgra_gui.cpp">
+      <Filter>src\cgra</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass2\base\work\src\cgra\cgra_mesh.cpp">
+      <Filter>src\cgra</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass2\base\work\src\cgra\cgra_shader.cpp">
+      <Filter>src\cgra</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass2\base\work\src\application.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass2\base\work\src\basic_model.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass2\base\work\src\bounding_box.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass2\base\work\src\opengl.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass2\base\work\src\cgra\cgra_geometry.hpp">
+      <Filter>src\cgra</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass2\base\work\src\cgra\cgra_gui.hpp">
+      <Filter>src\cgra</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass2\base\work\src\cgra\cgra_image.hpp">
+      <Filter>src\cgra</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass2\base\work\src\cgra\cgra_mesh.hpp">
+      <Filter>src\cgra</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass2\base\work\src\cgra\cgra_shader.hpp">
+      <Filter>src\cgra</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass2\base\work\src\cgra\cgra_wavefront.hpp">
+      <Filter>src\cgra</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\My Documents\Compsci Yr5\CGRA251\Ass2\base\work\src\CMakeLists.txt">
+      <Filter>src</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\My Documents\Compsci Yr5\CGRA251\Ass2\base\work\src\cgra\CMakeLists.txt">
+      <Filter>src\cgra</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{D9B7DA39-ED18-3072-92AC-EAB0C91E385B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\cgra">
+      <UniqueIdentifier>{1FE3DA47-9989-3962-8CC3-85A8C6BCC537}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

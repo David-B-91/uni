@@ -1,0 +1,17 @@
+﻿  light.cpp
+E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\light.cpp(57,13): warning C4244:  'initializing': conversion from 'T' to 'int', possible loss of data
+E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\light.cpp(57,13): warning C4244:         with
+E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\light.cpp(57,13): warning C4244:         [
+E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\light.cpp(57,13): warning C4244:             T=float
+E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\light.cpp(57,13): warning C4244:         ]
+E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\light.cpp(99,13): warning C4244:  'initializing': conversion from 'T' to 'int', possible loss of data
+E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\light.cpp(99,13): warning C4244:         with
+E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\light.cpp(99,13): warning C4244:         [
+E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\light.cpp(99,13): warning C4244:             T=float
+E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\light.cpp(99,13): warning C4244:         ]
+E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\light.cpp(123,13): warning C4244:  'initializing': conversion from 'T' to 'int', possible loss of data
+E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\light.cpp(123,13): warning C4244:         with
+E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\light.cpp(123,13): warning C4244:         [
+E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\light.cpp(123,13): warning C4244:             T=float
+E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\light.cpp(123,13): warning C4244:         ]
+  a4.vcxproj -> E:\My Documents\Compsci Yr5\CGRA251\Ass4\bin\Release\a4.exe

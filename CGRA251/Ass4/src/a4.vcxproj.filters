@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\application.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\cgra\cgra_gui.cpp">
+      <Filter>src\cgra</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\cgra\cgra_shader.cpp">
+      <Filter>src\cgra</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\camera.cpp">
+      <Filter>src\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\path_tracer.cpp">
+      <Filter>src\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\light.cpp">
+      <Filter>src\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\material.cpp">
+      <Filter>src\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\scene.cpp">
+      <Filter>src\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\scene_object.cpp">
+      <Filter>src\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\shape.cpp">
+      <Filter>src\scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\application.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\opengl.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\cgra\cgra_gui.hpp">
+      <Filter>src\cgra</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\cgra\cgra_shader.hpp">
+      <Filter>src\cgra</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\camera.hpp">
+      <Filter>src\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\path_tracer.hpp">
+      <Filter>src\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\light.hpp">
+      <Filter>src\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\material.hpp">
+      <Filter>src\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\ray.hpp">
+      <Filter>src\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\scene.hpp">
+      <Filter>src\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\scene_object.hpp">
+      <Filter>src\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\shape.hpp">
+      <Filter>src\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\scene\texture.hpp">
+      <Filter>src\scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\My Documents\Compsci Yr5\CGRA251\Ass4\work\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{C3CCDAA3-9AAE-36B9-BF4B-CD3612719B17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\cgra">
+      <UniqueIdentifier>{585A6B03-1B1E-390A-B37C-CAA7E1C2AFFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\scene">
+      <UniqueIdentifier>{2930C7BB-A186-39DE-BB29-406D449C3772}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
