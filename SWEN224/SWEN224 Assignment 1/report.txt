@@ -1,0 +1,14 @@
+SWEN224 Assignment 1 Report:
+
+1.
+	There was a point in which an instanceof check was checking for a string,
+	not sure if this would end in an actual bug as I didn't look to see if a string would 
+	ever be passed in.
+	I think there was a point where something was returnign null, can't recall the things that i fixed,
+	as they aren't flagged as bugs anymore.
+2.
+	I have used @Nullable in the isValidMove function for each piece, because a move can be made if the move is not a 
+	'take move', making this NonNull instead would create unwanted behaviour in the game.
+3.
+	these changes are mainly made in the ChessGame class, to avoid the errors, I had to break apart inline code into each step,
+	of code seprately, to cover all the options  that the NonNull tool checks for to make sure the flow is good.

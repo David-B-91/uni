@@ -1,0 +1,49 @@
+//Activity 1 part 1 (a) VMhit
+automata{
+    VMhit=coin->(hit->VMhit | coffeeBtn -> (hit -> VMhit | coffee -> VMhit)).
+}
+
+//Activity 1 part 2 (b) VMtc
+automata{
+    VMtc=coin->(teaBtn->tea->VMhit | coin -> coffeBtn -> coffee -> VMhit).
+}
+
+//Activity 1 part 3 (c) VMblack
+automata{
+    VMblack = coin -> Onecoin | wb -> Nocoin,
+        Nocoin = wb -> VMblack | coin -> Wbcoin,
+        Onecoin = teaBtn -> blackTea -> VMblack | coffeeBtn -> blackCoffee -> VMblack | wb -> Wbcoin,
+        Wbcoin = wb -> Onecoin | teaBtn -> whiteTea -> VMblack | coffeeBtn -> whiteCoffee -> VMblack.
+}
+
+//Activity 2  VMN
+
+const N = 3
+automata{
+   VMN = C[0],
+    C[c:0..N] = when (c<N) coin -> C[c+1] | when (c>0) (teaBtn -> takeTea -> C[c-1] | coffeeBtn -> takeCoffee -> C[c-1]).
+}
+
+//Activity 3  VMN2
+
+const N = 3
+automata{
+   VMN = C[0],
+    C[c:0..N] = when (c<N) coin -> C[c+1] | 
+                when (c>0) && (c<N) (teaBtn -> (coin -> C[c+1] | takeTea -> C[c-1])|
+                                     coffeeBtn -> (coin -> C[c+1] | takeCoffee -> C[c-1]))|
+                when (c==N) (teaBtn -> takeTea -> C[c-1] | coffeBtn -> takeCoffee -> C[c-1]).
+}
+
+//Activity 4 Prog
+
+automata{
+  Prog = (readX->writeX->Prog).
+  ParaProg = (left:Prog||right:Prog).
+  LProg = get -> readX -> writeX -> release -> LProg.
+  Lock = left.get->left.release->Lock|right.get->right.release->Lock.
+  PL = left:LProg||right:LProg||Lock.
+}
+
+
+
