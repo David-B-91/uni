@@ -1,2 +1,2 @@
-Two different sources of some of these assignments exist, copies I saved at home, and copies I saved on the university machines
-Both are uploaded as I am unsure which version was used for submission.
+Two different sources of some of these assignments exist, copies from the Eclipse workspace, and those I saveed in seperate folders.
+Unsure of which I used for submission so I have commited both.
