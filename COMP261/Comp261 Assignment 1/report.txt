@@ -1,0 +1,30 @@
+DAVID BURRELL - COMP 261 ASSIGNMENT ONE - AUCKLAND MAP.
+
+Code does:
+ 		Loads all files except polygons into relevant data structures.
+		Displays Map as nodes and edges on the UI.
+		Allows navigation using the UI arrows and Zoom in and Zoom out buttons.
+		Uses the search bar to somewhat highlight roads and display information.
+		uses onClick to find closest node
+		Attempted to comment methods.
+
+Does not:
+		Completely highlight all road segments (not sure why, manages to select parts of queen st but not the whole)
+		highlight the nodes, using the same method changed for nodes to hightlight that i do for segments,
+			but just doesn't highlight them.
+		The Search function also doesn't display the correct road info sometimes, thisll be due to using contains
+			instead of equals.
+		anything beyond the core of the assignement I didn't get to.
+
+Data Structures:
+		nodeMap - a Map of Node objects using node IDs as keys, and nodes for values.
+		roadMap - a map of Road objects using road IDs as keys, and roads for values.
+		segmentList - list of all segments in the segment file.
+		chosenSegment - Map of segments using roadIDs as kets and segments as values.
+				for use in selecting roads using search funtion.
+		chosenNode - Map of Nodes using node IDs as keys and nodes for values, for use
+				in onClick to select and highlight nearest node for mouse click.
+Testing: 	
+		to test i just ran the program and used a series of prints to see if the program was 
+			getting to the parts of the code i needed to. some of these prints may still be 
+			in the code.
