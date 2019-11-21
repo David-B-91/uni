@@ -1,0 +1,26 @@
+CYBR171Lab1.
+Core1:	
+	mkdri cybr171-lab1
+	ls
+	cd cybr171-lab1
+	curl -O http://gutenburg,org/files/36/36-0.txt
+	ls
+	nano 36-0.txt
+	
+	War of the Worlds
+	
+Completion 1:
+	ls: list information about the files in the current directory, sorted alphabetically by default.
+	more: a filter for paging through text one screenful at a time
+	tail: prints the last 10 lines of each FILE to standard output
+	tail 36-0.txt produces 10 blank lines.
+	
+Core 2:
+	openssl enc -aes-128-ecb -in declaration.txt -out declaration.bin
+	openssl enc -aes-128-ecb -d -in declaration.bin -out declaration-dec.txt -pass pass:rabbit
+	b90462a8b207718cc2959fe2beb642dd declaration.bin
+	44ae906d518fdbfdcc163f87d2147ec3 declaration-dec.txt
+	
+Core 3:
+	c61f3d858ccf0863a14aa6b19b379be3 pic_original.ecb.bmp
+	17027aba69ebab32f3da43efa0a3288b pic_original.cbc.bmp
