@@ -1,0 +1,74 @@
+NWEN301 Homework Assignment 4.		David Burrell:300209541
+
+1.
+	What are the implications of supprting UNIX consistnecy semantics for shared access of those 
+	files that are stored on remote file systems?
+	
+	Requires updates to a file to be immediately available to other processes. This can cause some 
+	ineffciencies such as more communication between server and clients, and not batching updates 
+	because the client has to report updates immediately.
+	
+2. 
+	Consider a file currently consisting of 20 blocks. Assume that the file control block (and the 
+	index block, in the case of indexed allocation) is already in memory. Calculate how many disk 
+	I/O operations are required for contiguous, linked, and indexed (single-level) allocation 
+	strategies, if, for	one block, the following conditions hold. In the contiguous-allocation case, 
+	assume that there is no room to grow in the beginning, but there is room to grow in the end. 
+	Assume that the block information to be added is already stored in memory.
+	
+	a. The block is added at the beginning.
+		Contiguous: 41
+		Linked: 2 
+		Indexed(single-level): 2
+	b. The block is added at the end.
+		Contiguous: 1 
+		Linked: 4 
+		Indexed(single-level): 2
+	c. The block is removed from the beginning.
+		Contiguous: 2
+		Linked: 2
+		Indexed(single-level): 1
+	d. The block is removed from the end.
+		Contiguous: 1
+		Linked: 21
+		Indexed(single-level): 1
+		
+3. 
+	Propose a change to the system-wide open file table in order to support the option for multiple
+	processes to jointly share the same location pointer while reading information from the same file.
+	
+	each entry in the table could contain a list of processes reading the file.
+	
+4.
+	Consider a file system that uses inodes to represent files. Disk blocks are 16-KB in size and each
+	pointer/link to a disk block requires 8 bytes. A file in this file system has 12 direct disk blocks, 
+	plus one single and one double indirect disk blocks. What is the maximum size of a file that can be 
+	stored in this file system?
+	
+	(12 * 16KB) + (1024 * 16KB) + (1024 * 1024 * 16KB) = 16GB
+	
+5.
+	The beginning of a free-space bitmap looks like this after the disk partition is first formatted: 
+	1000 0000 0000 0000 (the first block is used by the root directory). The system always searches 
+	for free blocks starting at the lowest-numbered block, so afterwriting file A, which uses six blocks,
+	the bitmap looks like this: 1111 1110 0000 0000. Show the bitmap after each of the following 
+	additional actions:
+	
+	(a) File B is written, using five blocks.
+		1111 1111 1111 0000
+	(b) File A is deleted.
+		1000 0001 1111 0000
+	(c) File C is written, Using eight blocks.
+		1111 1111 1111 1100
+	(d) File B is deleted.
+		1111 1110 0000 1100
+
+6.	
+	A RAID can fail if two or more of its drives crash within a short time interval. Suppose that the 
+	probability of one drive crashing in a given hour is p. What is the probability of a k-drive RAID 
+	failing in a given hour?
+	
+	P(0 fail) = (1-p)^k
+	P(1 fail) = kC1 * p^1 * (1-p)^(k-1)
+	P(k fail in hour) = 1 - P(0 fail) - P(1 fail)
+					  = 1 - ((1-p)^k) - (kC1 * p^1 * ((1-p)^(k-1)))
