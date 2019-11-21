@@ -1,0 +1,50 @@
+NWEN242 Homework Assignment 4
+
+Q1.
+	a)	4
+	b)	I,J
+	c)	indexes of A[],B[]
+	
+Q2.
+	a)	Word Address:	Binary Address:		Tag:	Index:	Hit/Miss:
+		3				00000011			0		3		Miss
+		180				10110100			11		4		Miss
+		43				00101011			2		11		Miss
+		2				00000010			0		2		Miss
+		191				10111111			11		15		Miss
+		88				01011000			5		8		Miss
+		190				10111110			11		14		Miss
+		14				00001110			0		14		Miss
+		181				10110101			11		5		Miss
+		44				00101100			2		12		Miss
+		186				10111010			11		10		Miss
+		253				11111101			15		13		Miss
+		
+	b)	Word Address:	Binary Address:		Tag:	Index:	Hit/Miss:
+		3				00000011			0		1		Miss
+		180				10110100			11		2		Miss
+		43				00101011			2		5		Miss
+		2				00000010			0		1		Hit
+		191				10111111			11		7		Miss
+		88				01011000			11		0		Miss
+		190				10111110			11		7		Hit
+		14				00001110			0		7		Miss
+		181				10110101			11		2		Hit
+		44				00101100			2		6		Miss
+		186				10111010			11		5		Miss
+		253				11111101			15		6		Miss
+		
+	c)												Cache1:				Cache2:				Cache3:
+		Word Address:	Binary Address:		Tag:	Index:	Hit/Miss:	Index:	Hit/Miss:	Index:	Hit/Miss:
+		3				00000011			0		3		Miss		1		Miss
+		180				10110100			22		4		Miss		2		Miss
+		43				00101011			5		3		Miss		1		Miss
+		2				00000010			0		2		Miss		1		Hit
+		191				10111111			23		7		Miss		3		Miss
+		88				01011000			11		0		Miss		0		Miss
+		190				10111110			23		6		Miss		3		Hit
+		14				00001110			1		6		Miss		3		Miss
+		181				10110101			22		5		Miss		2		Hit
+		44				00101100			5		4		Miss		2		Miss
+		186				10111010			23		2		Miss		1		Miss
+		253				11111101			31		5		Miss		2		Miss

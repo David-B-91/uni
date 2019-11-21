@@ -1,0 +1,64 @@
+4.1 a) 	basic: 10
+		bubble: 10
+		forward: 10
+		
+4.1 b)	basic: 9
+		bubble: 11
+		forward: 9
+		
+4.1 c)	the second add instruction needs the value
+		of $2 before it has been written back into
+		the	register by the first ADD instruction.
+		this is a Data Hazard.
+		
+4.2 a)	basic: 5, jump made at 6.
+		bubble: 5, jump made at 6.
+		forward: 4, jump made at 4.
+		
+4.2 b)	for the basic mode, the addi is executed
+		and results in the branch instruction not
+		being taken on the following loop.
+		for the other 2 modes, the addi doesn't
+		enter the pipeline.
+		
+4.2 c)	this is a Control Hazard, we don't know
+		which instruction to fetch before the
+		branch is taken or not.
+		
+4.3 a)	basic: 10
+		bubble: 12
+		forward: 10
+		
+4.3 b)	basic: 8
+		bubble: 10
+		forward: 8
+		
+4.3	c)	Data Hazard, ADDI instuction needs the
+		result of the LW instruction before it is
+		done.
+
+5.1		Mode Option:						Instructions:	Cycles:		CPI:
+		Basic								206				212			1.0291261672973633
+		Bubbles								76				182			2.3947367668151855
+		Bubbles with Branch Assumption		76				154			2.026315689086914
+		Forwarding							120				126			1.0499999523162842
+		Forwarding with Branch Assumption	115				127			1.104347825050354
+
+5.2 a)	the program instuctions are only executed
+		during clock cycles, so the less cycles
+		used, the faster the program will be
+		executed. instuctions are depentent on
+		cycles.
+		
+5.2	b)	because the different datapaths all have 
+		different optimisations to speed up the 
+		execution of the program through the
+		pipeline. each optimisation condenses the
+		instructions on the pipeline, to allow
+		more instructions to be executed
+		simultaniously.
+		
+5.3		Mode Option:								Instructions:	Cycles:		CPI:
+		Forwarding Optimized						114				120			1.0526316165924072
+		Forwarding with Branch Assumption Optimized	96				109			1.1354166269302368
+		
