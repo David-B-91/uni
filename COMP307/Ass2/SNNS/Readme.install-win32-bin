@@ -1,0 +1,103 @@
+**********************************************************************
+        SNNS Version 4.2 for Windows (Executables) - Readme.win32
+**********************************************************************
+
+Note that  SNNS has not been tested extensively in different computer
+environments and is a research tool with frequent substantial changes.
+It should be obvious that we don't guarantee anything. We are also not
+staffed to answer problems with SNNS or to fix bugs quickly.
+
+SNNSv4.2 for Windows is a SNNSv4.2 version, compiled for Windows platforms.
+Since it has been originaly developed for Unix platforms, this port still
+relies on the X-Windows graphical system. It includes only the executables,
+the X11 dynamic link librarays and examples. Source code is available in an
+extra distribution.
+
+In order to run SNNSv4.2 on Windows you must install an X-Server,
+a program that interprets the SNNS' graphic commands and controls the
+display accordingly. A demo X-Server can be downloaded from:
+  ftp://ftp.informatik.uni-tuebingen.de/pub/SNNS/Windows/Executables/X-Server/
+
+For more information about X-Windows, including hyperlinks to other
+X-Servers, you can refer to, for example:
+  http://www.geocities.com/ResearchTriangle/Forum/6298/
+
+Please note that, in order to run X-Server, your computer must have
+TCP/IP installed, even if it is not connected to the Internet. SNNS
+and X-Server communicate over TCP/IP, even if they both reside on the
+same computer.
+
+
+
+*** INSTALLING THE SNNS ***
+
+First, install an X-Server, if you don't have any installed. Check if
+it is working properly.
+
+Unzip the binary distribution to a directory of your choice.
+
+Then, add the bin directory of this SNNS distribution to the PATH
+system variable.
+
+Now, after starting the X-Server, you should be able to run the SNNS
+by simply starting the
+  snns.bat
+in the SNNS directory.
+
+Gerd Balzuweit <gerd.balzuweit@gmx.net>
+Igor Fischer <fischer@informatik.uni-tuebingen.de>
+
+
+
+**********************************************************************
+A few more words about X and TCP/IP
+**********************************************************************
+
+It is defined that every TCP/IP host in the world must have the
+hostname alias "localhost" and the depending IP address 127.0.0.1.
+If your network settings are ok a connect to this alias/address should
+work without any external network traffic.
+You should use this name/address if you work local.
+
+** Check at first if a local ping works:
+   C:\>ping 127.0.0.1
+
+   Pinging localhost [127.0.0.1] with 32 bytes of data:
+
+   Reply from 127.0.0.1: bytes=32 time<10ms TTL=64
+   ...
+   >> This must works if your network settings are ok !!!
+   If not you must install at least one network adapter.
+
+** The reverse line must work too
+   C:\>ping localhost
+
+   Pinging <your_host_name> [127.0.0.1] with 32 bytes of data:
+
+   Reply from 127.0.0.1: bytes=32 time<10ms TTL=64
+   ...
+
+   If this does not work check that the hosts file
+   - Win95: %windir%\hosts
+   - NT:    %windir%\system32\drivers\etc\hosts
+
+   contains the line
+   127.0.0.1       localhost
+
+** Because every X program needs a "display" information (output
+   location) it is necessary to set either a "DISPLAY" environment
+   variable or a "-d" or "-display" start option.
+   The value is defined as:
+   [hostname|ip_address]:<server_no>[.<display_no>]
+   If you are local you can use simply ":0"
+
+   try a
+   > bin\xgui -d :0
+
+   or fully qualified
+   > bin\xgui -d 127.0.0.1:0.0
+
+**********************************************************************
+        End of document:
+     'SNNS Version 4.2 for Windows (Executables) - Readme.win32'
+**********************************************************************

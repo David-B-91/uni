@@ -1,0 +1,170 @@
+@DefineProject
+	@Name     = "X-WIN32"
+	@Version  = "3.4.X"
+	@Subdir   = "\\XWIN32"
+	@OutDrive = C
+	@Requires @HardDisk
+	@AssumeHardDisk = @TRUE
+	@InDiskBell = @TRUE
+@EndProject
+
+
+@DefineVars
+ 	@Drive @WDrive = @WindowsDrive
+ 	@Dir   @WDir   = @WindowsDir
+@EndVars
+
+
+
+@GetOutDrive
+	@DLGCTRLSIZE(0,4,4,10,40)
+	@Suppress A
+	@Suppress B
+	@Cls
+	On which disk drive do you wish to install @Name?
+@EndOutDrive
+
+
+@GetSubdir
+	@DLGCTRLSIZE(0,10,4,11,40)
+	@Cls
+	Enter directory on drive @OutDrive in which to install @Name.
+
+	If you are installing under Win95 or NT, do not use a path
+	that contains long filenames.  We expect this restriction
+	to be corrected in the next version.
+	
+	Start your entry with a backslash (\). 
+@EndSubdir
+
+
+
+@If (@Exists ("@OutDrive:@SubDir\\xwin32.exe"))
+	@GetOption
+	@DLGCTRLSIZE(0,4,4,10,40)
+	@Cls
+	The X server and support programs are already installed.  
+
+	@Option 8 = "Don't reinstall the X server"
+	@Option 7 = "Reinstall the X server"
+
+	@EndOption
+@EndIf
+
+
+
+@If (@Exists ("@OutDrive:@SubDir\\LIB\\FONTS\\MISC\\fonts.dir"))
+	@GetOption
+	@DLGCTRLSIZE(0,4,4,10,40)
+	@Cls
+	X fonts are already installed.
+
+	@Option 51 = "No, don't install the fonts."
+	@Option 50 = "Yes, reinstall the fonts."
+
+	@EndOption
+@Endif
+
+
+@Display
+	@Cls
+	Installation of files will now follow...
+
+	The progress bar for "This Disk" and "Entire Project"
+	may not correctly track the installation progress.
+	@Pause
+@EndDisplay
+
+
+@DefineDisk
+	@Label  = "Disk 1"
+
+	@If (8 [! @Option)
+		@BeginLib LIB.RED
+			@File *.* @Out LIB\*.*
+		@EndLib
+
+		@BeginLib XWIN32.RED
+			@File *.* @Out *.*
+			@File VBRUN300.DLL @Out @WDrive:@WDir\*.*
+			@If (@Exists ("@WDrive:@WDir\\xwin32.ini"))
+			@Else
+				@File XWIN32.INI @Out @WDrive:@WDir\*.*
+			@Endif
+		@EndLib
+// ---------------------------------------------------------------------
+// The following lines are different for floppy or network distributions
+// ---------------------------------------------------------------------
+// Use the following lines if a floppy dist ---------------------
+//		@File xwin32.exe @Out *.*
+//	@Endif
+//@EndDisk
+//
+//@DefineDisk
+//	@Label = "Disk 2"
+//
+// End of diskette lines ----------------------------------------
+
+
+// Use the following lines if a network dist --------------
+		@If (@Exists ("XWIN32.EXE"))
+			@File XWIN32.EXE @Out *.*
+		@Else
+			@BeginLib XW32EXE.RED
+				@File XWIN32.EXE @Out *.*
+			@EndLib
+		@Endif
+	@Endif
+// End of network lines -----------------------------------
+
+	@If (51 [! @Option)
+		@BeginLib 75DPI.RED
+			@File *.* @Out LIB\FONTS\75DPI\*.*
+		@EndLib
+
+		@BeginLib MISC.RED
+			@File *.* @Out LIB\FONTS\MISC\*.*
+		@EndLib
+
+		@BeginLib ANDREW.RED
+			@File *.* @Out LIB\FONTS\ANDREW\*.*
+		@EndLib
+
+		@BeginLib CDE.RED
+			@File *.* @Out LIB\FONTS\CDE\*.*
+		@EndLib
+
+		@BeginLib SCO.RED
+			@File *.* @Out LIB\FONTS\SCO\*.*
+		@EndLib
+	@Endif
+@EndDisk
+
+
+
+@Finish
+
+
+/* Modify XWIN32.INI - Directory line */
+@SetINI ("settings", "directory", "@OutDrive:\\@SubDir\\LIB", "XWIN32.INI")
+
+
+@If (51 [! @Option)
+	/* Modify XWIN32.INI - Fontpath line */
+	@SetINI ("settings", "fontpath", "@OutDrive:\\@SubDir\\LIB\\FONTS\\MISC,@OutDrive:\\@SubDir\\LIB\\FONTS\\75DPI,@OutDrive:\\@SubDir\\LIB\\FONTS\\ANDREW,@OutDrive:\\@SubDir\\LIB\\FONTS\\CDE,@OutDrive:\\@SubDir\\LIB\\FONTS\\SCO", "XWIN32.INI") 
+@Endif
+
+/* Set-up the group and add an X-Win to tht group */
+/* Add X-Util to the previouly made group         */
+@ProgramManager("[CreateGroup (X-Win32)] [AddItem(@OutDrive:\\@Subdir\\xwin32.exe, X-Win32)] [AddItem(@OutDrive:\\@Subdir\\xutil.exe, X-Util)]") 
+
+
+@Cls
+The X-Win32 files have been successfully installed.
+This install program will now exit normally.
+@Pause
+@Exit
+
+
+@EndFinish
+

@@ -1,0 +1,41 @@
+**********************************************************************
+	How to obtain SNNS
+**********************************************************************
+
+This Windows version of the SNNS can be obtained via anonymous FTP
+from host
+
+        ftp.informatik.uni-tuebingen.de
+
+in the subdirectory
+
+        /pub/SNNS/Windows/Executables
+
+as file
+
+        SNNSv4.2.Win32-bin.zip
+
+Be sure to set the FTP mode to binary before  transmission of the
+files. Also watch out for possible higher version numbers, patches or
+Readme files in the above directory /pub/SNNS. After successful
+transmission of the file, unzip it in the directory where you want to
+install SNNS.
+
+This zip file contains only the binaries and some simple examples of
+trained networks. A PostScript version of the documentation of SNNS
+is also available in the directory
+
+        /pub/SNNS
+
+as file
+
+	SNNSv4.2.Manual.ps.Z
+
+It must  be  uncompressed  and  should  then  print on any  PostScript
+printer.  Again  remember  to  set  the  FTP  mode  to  binary  before
+transmission of the file.
+
+
+**********************************************************************
+	End of Readme "How to obtain SNNS"
+**********************************************************************
