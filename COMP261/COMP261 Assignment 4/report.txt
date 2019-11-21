@@ -1,0 +1,4 @@
+Comp261 aSSIGNEMent 4 - Parser - David Burrell.
+
+I completed stages 0-2. and made an attempt at a little of stage 3, in particualr elif, 
+and optional arguments for barrelLR and barrelFB
